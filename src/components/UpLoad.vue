@@ -77,7 +77,8 @@ const upLoadChunks = async (chunks: Blob[], existChunks: string[]) => {
       taskPool.splice(
         taskPool.findIndex((item: any) => {
           return item === task
-        })
+        }),
+        1
       )
     })
 
